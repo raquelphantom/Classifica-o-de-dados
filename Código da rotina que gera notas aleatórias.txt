@@ -1,0 +1,9 @@
+void    abastece_notas (float *notas)
+{  int i;
+   for (i=0; i<TAMANHO_VETOR; i++)
+      do 
+      {
+         notas[i] = rand()%11;// + rand()%10*0.23;
+      }
+      while ( notas[i] > 10 );
+}
